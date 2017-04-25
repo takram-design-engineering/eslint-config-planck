@@ -1,0 +1,26 @@
+{
+  "name": "eslint-config-planck",
+  "version": "0.1.6",
+  "description": "",
+  "repository": "takram-design-engineering/eslint-config-planck",
+  "main": "index.js",
+  "author": "Shota Matsuda",
+  "license": "MIT",
+  "homepage": "http://takram.com/projects/planck",
+  "files": [
+    "package.json",
+    "README.md",
+    "index.js"
+  ],
+  "scripts": {},
+  "dependencies": {
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "eslint": ">= 3"
+  }
+}
