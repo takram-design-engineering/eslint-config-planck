@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-planck",
+  "name": "@takram/eslint-config-planck",
   "version": "0.1.6",
   "description": "",
   "repository": "takram-design-engineering/eslint-config-planck",
