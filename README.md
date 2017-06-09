@@ -5,7 +5,7 @@ ESLint config for [Planck framework](https://takram.com/projects/planck) and rel
 
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
 )](http://mit-license.org)
-[![npm version](https://badge.fury.io/js/@takram/eslint-config-planck.svg)](http://badge.fury.io/js/@takram/eslint-config-planck)
+[![npm version](https://badge.fury.io/js/%40takram%2Feslint-config-planck.svg)](http://badge.fury.io/js/%40takram%2Feslint-config-planck)
 
 ## Getting Started
 
