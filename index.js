@@ -22,6 +22,8 @@
 //  DEALINGS IN THE SOFTWARE.
 //
 
+/* eslint-disable quote-props */
+
 module.exports = {
   'parserOptions': {
     'ecmaVersion': 2017,
@@ -57,14 +59,14 @@ module.exports = {
     // Limit to 80 except import/export expressions
     'max-len': ['error', {
       'code': 80,
-      'ignorePattern': "^\\s*(import|export)",
+      'ignorePattern': '^\\s*(import|export)',
     }],
 
     // Allow for names ending with "Class"
     'new-cap': ['error', {
       'newIsCap': true,
       'newIsCapExceptions': [],
-      'newIsCapExceptionPattern': "Class$",
+      'newIsCapExceptionPattern': 'Class$',
       'capIsNew': false,
     }],
 
@@ -74,7 +76,7 @@ module.exports = {
         ['&', '|', '^', '~', '<<', '>>', '>>>'],
         ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
         ['&&', '||'],
-        ['in', 'instanceof']
+        ['in', 'instanceof'],
       ],
       'allowSamePrecedence': false,
     }],
