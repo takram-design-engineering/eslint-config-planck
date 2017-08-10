@@ -37,7 +37,7 @@ module.exports = {
   'extends': 'airbnb',
 
   'rules': {
-    // Prefer line length limit over this
+    // Prefer line length limit over this rule
     'arrow-body-style': 0,
 
     // Won't cause any problem
@@ -84,11 +84,6 @@ module.exports = {
     // Not sure and we need to format codes carefully
     'no-nested-ternary': 0,
 
-    // Allow for properties
-    'no-param-reassign': ['error', {
-      'props': false,
-    }],
-
     // Insane
     'no-plusplus': 0,
 
@@ -100,9 +95,6 @@ module.exports = {
       'vars': 'all',
       'args': 'none',
     }],
-
-    // Not sure but writing less important codes later makes it much readable
-    'no-use-before-define': 0,
 
     // Prefer simpler syntax
     'semi': ['error', 'never'],

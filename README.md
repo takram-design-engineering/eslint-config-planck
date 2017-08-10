@@ -12,7 +12,9 @@ ESLint config for [Planck framework](https://takram.com/projects/planck) and rel
 ### Installing
 
 ```sh
-npm install --save-dev @takram/eslint-config-planck
+npm install @takram/eslint-config-planck
+
+# Install peer dependencies
 ```
 
 ## License
