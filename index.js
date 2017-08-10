@@ -37,7 +37,7 @@ module.exports = {
   'extends': 'airbnb',
 
   'rules': {
-    // Prefer line length limit over this
+    // Prefer line length limit over this rule
     'arrow-body-style': 0,
 
     // Won't cause any problem
