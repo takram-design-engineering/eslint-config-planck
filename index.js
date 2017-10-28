@@ -22,27 +22,16 @@
 //  DEALINGS IN THE SOFTWARE.
 //
 
-/* eslint-disable quote-props */
-
 module.exports = {
-  'parserOptions': {
-    'ecmaVersion': 2017,
-    'sourceType': 'module',
-    'ecmaFeatures': {
-      'generators': false,
-      'objectLiteralDuplicateProperties': false,
-    },
-  },
+  extends: 'airbnb',
 
-  'extends': 'airbnb',
-
-  'rules': {
+  rules: {
     // Prefer line length limit over this rule
     'arrow-body-style': 0,
 
     // Won't cause any problem
     'arrow-parens': ['error', 'as-needed', {
-      'requireForBlockBody': false,
+      requireForBlockBody: false,
     }],
 
     // Insane
@@ -53,32 +42,45 @@ module.exports = {
 
     // Allow for catch statements
     'no-empty': ['error', {
-      'allowEmptyCatch': true,
+      allowEmptyCatch: true,
     }],
 
     // Limit to 80 except import/export expressions
-    'max-len': ['error', {
-      'code': 80,
-      'ignorePattern': '^\\s*(import|export)',
+    'max-len': ['error', 80, 2, {
+      ignoreUrls: true,
+      ignoreComments: false,
+      ignoreRegExpLiterals: true,
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true,
     }],
 
     // Allow for names ending with "Class"
     'new-cap': ['error', {
-      'newIsCap': true,
-      'newIsCapExceptions': [],
-      'newIsCapExceptionPattern': 'Class$',
-      'capIsNew': false,
+      newIsCap: true,
+      newIsCapExceptions: [],
+      newIsCapExceptionPattern: 'Class$',
+      capIsNew: false,
+      capIsNewExceptions: ['Immutable.Map', 'Immutable.Set', 'Immutable.List'],
     }],
 
     // We know the math
     'no-mixed-operators': ['error', {
-      'groups': [
+      groups: [
+        ['%', '**'],
+        ['%', '+'],
+        ['%', '-'],
+        ['%', '*'],
+        ['%', '/'],
+        ['**', '+'],
+        ['**', '-'],
+        ['**', '*'],
+        ['**', '/'],
         ['&', '|', '^', '~', '<<', '>>', '>>>'],
         ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
         ['&&', '||'],
         ['in', 'instanceof'],
       ],
-      'allowSamePrecedence': false,
+      allowSamePrecedence: false,
     }],
 
     // Not sure and we need to format codes carefully
@@ -92,11 +94,12 @@ module.exports = {
 
     // Insane for arguments
     'no-unused-vars': ['error', {
-      'vars': 'all',
-      'args': 'none',
+      vars: 'all',
+      args: 'none',
+      ignoreRestSiblings: true,
     }],
 
     // Prefer simpler syntax
-    'semi': ['error', 'never'],
+    semi: ['error', 'never'],
   },
 }
