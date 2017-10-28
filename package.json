@@ -1,6 +1,6 @@
 {
   "name": "@takram/eslint-config-planck",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "ESLint config based on Airbnb’s for Planck framework and the related codes",
   "repository": "takram-design-engineering/eslint-config-planck",
   "main": "index.js",
