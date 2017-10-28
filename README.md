@@ -1,7 +1,7 @@
 eslint-config-planck
 ====================
 
-ESLint config for [Planck framework](https://takram.com/projects/planck) and related source codes based on [Airbnb’s](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb).
+ESLint config for [Planck framework](https://takram.com/projects/planck) and related source codes based on [Airbnb’s](https://github.com/airbnb/javascript).
 
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
 )](http://mit-license.org)
@@ -13,15 +13,13 @@ ESLint config for [Planck framework](https://takram.com/projects/planck) and rel
 
 ```sh
 npm install @takram/eslint-config-planck
-
-# Install peer dependencies
 ```
 
 ## License
 
 The MIT License
 
-Copyright (C) 2016-Present Shota Matsuda
+Copyright (C) 2017-Present Shota Matsuda
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the "Software"),
