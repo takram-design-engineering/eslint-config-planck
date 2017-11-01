@@ -101,5 +101,8 @@ module.exports = {
 
     // Prefer simpler syntax
     semi: ['error', 'never'],
+
+    // We disallowed semicolons
+    'semi-style': ['error', 'first'],
   },
 }
