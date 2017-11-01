@@ -108,3 +108,12 @@ try {
   function f(a) {}
   f()
 }
+
+// semi-style
+{
+  function f(a) {}
+  let a = 0
+  const b = { a: 1 }
+  ;({ a } = b)
+  f(a)
+}
